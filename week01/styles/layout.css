@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --border: 1px solid rgb(0, 0, 0 / .1);
+    --background-color: lightgrey;
+    --alt-background-color: rgb(86, 86, 86);
+    --nav-background-color: rgb(41, 41, 41);
+    --nav-text-color: white;
+    --text-color: black;
+}
+
+header,
+main,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+header {
+    height: 9rem;
+}
+
+.header_p_container {
+    height: 6rem;
+    background-color: var(--alt-background-color);
+}
+
+header p {
+    padding: 1rem;
+    color: var(--nav-text-color);
+}
+
+nav ul {
+    height: 3rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--nav-background-color);
+}
+
+nav li {
+    list-style-type: none;
+    padding: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--nav-text-color);
+}
+
+p {
+    color: var(--text-color);
+    padding: 1rem;
+}
+
+.main_grid {
+    height: 20rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.main_content_container {
+    height: 100%;
+    width: 100%;
+    background-color: var(--background-color);
+}
+
+aside {
+    height: 100%;
+    width: 100%;
+}
+
+footer {
+    height: 10rem;
+    background-color: var(--alt-background-color);
+}
+
+footer p {
+    text-align: center;
+    color: var(--nav-text-color);
+}
