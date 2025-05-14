@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --border: 1px solid rgb(0 0 0 / .1);
+    --background-color: #005589;
+    --alt-background-color: #354e71;
+    --nav-background-color: #003A65;
+    --nav-text-color: white;
+    --text-color: black;
+}
+
+/* Fonts */
+
+h1 {
+    font-weight: 600;
+    font-size: x-large;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: larger;
+}
+
+h3,
+a {
+    font-weight: 500;
+}
+
+figcaption {
+    font-style: italic;
+}
+
+header,
+main,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+header {
+    height: 8rem;
+}
+
+.header_p_container {
+    height: 4rem;
+    background-color: var(--background-color);
+}
+
+header h1 {
+    padding: 1rem;
+    color: var(--nav-text-color);
+    text-align: center;
+}
+
+nav ul {
+    height: 3rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--nav-background-color);
+}
+
+nav li {
+    list-style-type: none;
+    padding: 1rem;
+}
+
+nav a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    color: var(--nav-text-color);
+    padding: .8rem;
+}
+
+nav a:hover {
+    transform: scale3d(1.05, 1.05, 1);
+    box-shadow: 0 0 20px var(--alt-background-color);
+    background: linear-gradient(135deg, var(--alt-background-color), #4b678f);
+}
+
+p {
+    padding: 1rem;
+    color: var(--text-color);
+}
+
+h2,
+h3 {
+    color: var(--nav-text-color);
+    text-align: center;
+}
+
+.main_landing_page_grid {
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 2.8fr 1fr;
+}
+
+.card {
+    width: 98%;
+    height: 95%;
+    border: var(--border);
+    border-radius: 10px;
+}
+
+.card h2 {
+    width: 100%;
+    padding: .5rem 0;
+    border-radius: 10px 10px 0 0;
+    background-color: var(--background-color);
+}
+
+.card .about_grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.card img {
+    margin: 1rem 0;
+    border: 2px solid lightblue;
+}
+
+.card h3 {
+    margin: 0 auto;
+    width: 80%;
+    border-bottom: var(--border);
+    color: var(--text-color);
+}
+
+.airplane_flex {
+    display: flex;
+}
+
+.airplane_flex figure {
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.airplane_flex figcaption {
+    text-align: center;
+}
+
+.airplane_flex p {
+    margin-bottom: 1rem;
+}
+
+.card ul {
+    padding: 4rem 2rem;
+}
+
+.card li {
+    padding: .2rem;
+}
+
+footer {
+    height: 5rem;
+    background-color: var(--background-color);
+}
+
+footer p {
+    text-align: center;
+    color: var(--nav-text-color);
+    padding: 1rem 0 0 0;
+}
+
+footer #lastModified {
+    padding: 0;
+    color: yellow;
+}
