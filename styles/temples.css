@@ -91,7 +91,7 @@ nav a:hover {
     transform: scale3d(1.05, 1.05, 1);
 }
 
-main h1 {
+main h2 {
     text-align: center;
     padding: 1rem;
 }
