@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --border: 1px solid rgb(0 0 0 / .1);
+    --background-color: #005589;
+    --alt-background-color: #354e71;
+    --nav-background-color: #003A65;
+    --nav-text-color: white;
+    --text-color: black;
+}
+
+/* Fonts */
+
+h1 {
+    font-weight: 600;
+    font-size: x-large;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: larger;
+}
+
+h3,
+a {
+    font-weight: 500;
+}
+
+figcaption {
+    font-style: italic;
+}
+
+header,
+main,
+footer {
+    max-width: 840px;
+    margin: 0 auto 2rem;
+}
+
+header {
+    height: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--nav-background-color);
+}
+
+header h1 {
+    padding-left: 2rem;
+    display: flex;
+    align-items: center;
+    color: var(--nav-text-color);
+    line-height: 1;
+}
+
+#hamNavMenuButton {
+    display: none;
+    font-size: 2rem;
+    color: var(--nav-text-color);
+    background-color: var(--nav-background-color);
+    cursor: pointer;
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul li {
+    color: var(--nav-text-color);
+    list-style-type: none;
+}
+
+nav a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--nav-text-color);
+}
+
+nav a:hover {
+    transform: scale3d(1.05, 1.05, 1);
+}
+
+main h1 {
+    text-align: center;
+    padding: 1rem;
+}
+
+.templeGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+figure {
+    align-self: center;
+    justify-self: center;
+}
+
+img {
+    width: 200px;
+    height: auto;
+}
+
+
+
+footer {
+    height: 5rem;
+    background-color: var(--background-color);
+}
+
+footer p {
+    text-align: center;
+    color: var(--nav-text-color);
+    padding: 1rem 0 0 0;
+}
+
+footer #lastModified {
+    padding: 0;
+    color: yellow;
+}
