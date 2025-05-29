@@ -1,0 +1,89 @@
+@media screen and (max-width: 600px) {
+
+    body {
+        font-size: 1rem;
+    }
+
+    header,
+    main,
+    footer {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    main {
+        background-color: white;
+    }
+
+    section {
+        width: 100%;
+        display: block;
+        position: relative;
+        height: fit-content;
+        background-color: white;
+        color: black;
+        padding: 0;
+    }
+
+    section h2 {
+        right: 0px;
+        display: block;
+        width: 100%;
+        overflow: visible;
+        margin: 0;
+        position: relative;
+        font-weight: 700;
+        padding: 1rem;
+        text-align: center;
+        color: black;
+        background-color: white;
+    }
+
+    /* Classes */
+
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+
+    h2,
+    label,
+    .dataGrid p {
+        color: black;
+    }
+
+    .sectionSpacer {
+        display: contents;
+    }
+
+    /* ID's */
+
+    #dataSection {
+        display: block;
+        position: relative;
+        bottom: unset;
+        left: unset;
+    }
+
+    #weatherSection {
+        display: block;
+        position: relative;
+        bottom: unset;
+        right: unset;
+    }
+
+    #weatherSection img {
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 1rem;
+        width: 20%;
+        height: auto;
+        text-align: center;
+    }
+
+    footer #lastModified {
+        padding: 0;
+        color: var(--section-background-color);
+    }
+
+}

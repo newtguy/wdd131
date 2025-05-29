@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page</title>
+    <meta name="author" content="Nathan Shelley">
+    <meta name="description" content="WDD 131 - Responsive Images Project - Nathan Shelley">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-narrow.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <script defer src="scripts/place.js"></script>
+    <script defer src="scripts/getdates.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Argentina</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/flag-of-argentina-large.webp" media="(min-width: 600px)">
+                <img src="images/flag-of-argentina-small.webp" alt="Flag of Argentina" width="600" height="500">
+            </picture>
+        </div>
+
+        <section id="dataSection">
+            <h2>Data</h2>
+            <div class="dataGrid">
+                <div class="sectionSpacer"></div>
+                <label>Area:</label>
+                <p id="area">2,780,085 sq km</p>
+                <label>Population:</label>
+                <p id="population">45.54 million</p>
+                <label>Capital:</label>
+                <p id="capital">Buenos Aires</p>
+                <label>Languages:</label>
+                <p id="languages">Spanish</p>
+                <label>Currency:</label>
+                <p id="currency">Argentine Peso</p>
+                <label>Time Zone:</label>
+                <p id="timeZone">UTC-3</p>
+                <label>Calling Code:</label>
+                <p id="callingCode">+54</p>
+                <label>InternetTLD:</label>
+                <p id="internetTLD">.ar</p>
+            </div>
+        </section>
+        <section id="weatherSection">
+            <h2 id="weatherEmoji">Weather &nbsp; &nbsp; &nbsp; ⛅</h2>
+            <img src="images/weather-icon.svg" alt="Weather Icon">
+            <div class="dataGrid">
+                <div class="sectionSpacer"></div>
+                <label>Temperature:</label>
+                <p id="temp">9</p>
+                <label>Conditions:</label>
+                <p id="conditions">Overcast</p>
+                <label>Wind:</label>
+                <p id="wind">13</p>
+                <label>Wind Chill:</label>
+                <p id="windChill"></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> ✈️ Nathan Shelley ✈️ USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

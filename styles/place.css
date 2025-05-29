@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --border: 1px solid rgb(0 0 0 / .1);
+    --section-background-color: #7D4016;
+    --highlight-background-color: #FFB81C;
+    --nav-background-color: #6CACE4;
+    --nav-text-color: black;
+    --text-color: black;
+    --section-text-color: white;
+}
+
+/* Fonts */
+
+h1 {
+    font-weight: 600;
+    font-size: x-large;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: larger;
+    background-color: var(--highlight-background-color);
+    color: var(--text-color);
+}
+
+h3,
+a {
+    font-weight: 500;
+}
+
+figcaption {
+    font-style: italic;
+}
+
+/* Standard Elements */
+
+header,
+main,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+main {
+    background-color: #FFB81C;
+    padding-bottom: .5rem;
+}
+
+header {
+    height: 5rem;
+    background-color: var(--highlight-background-color);
+}
+
+header h1 {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--nav-text-color);
+    background-color: var(--nav-background-color);
+}
+
+p {
+    color: var(--text-color);
+}
+
+h2,
+h3 {
+    color: var(--nav-text-color);
+}
+
+section {
+    width: 17%;
+    height: fit-content;
+    background-color: var(--section-background-color);
+    opacity: .9;
+    color: var(--section-text-color);
+}
+
+section h2 {
+    position: absolute;
+    top: 5%;
+    right: 15%;
+    width: 90%;
+    padding: 1rem;
+}
+
+footer {
+    height: 5rem;
+    background-color: var(--nav-background-color);
+}
+
+footer p {
+    text-align: center;
+    color: var(--nav-text-color);
+    padding: 1rem 0 0 0;
+}
+
+/* Classes */
+
+.hero {
+    width: 100%;
+    height: fit-content;
+}
+
+.hero img {
+    width: 840px;
+    height: auto;
+}
+
+.dataGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 1rem;
+}
+
+.dataGrid .sectionSpacer {
+    height: 5.5rem;
+    grid-column: span 2;
+}
+
+.dataGrid label {
+    font-weight: 700;
+    padding: 0.2rem;
+    width: 100%;
+    text-align: right;
+    opacity: 1;
+}
+
+.dataGrid p {
+    padding: 0.2rem;
+    width: 100%;
+    text-align: left;
+    opacity: 1;
+    color: var(--section-text-color);
+}
+
+/* ID's */
+
+#dataSection {
+    position: absolute;
+    bottom: 16rem;
+    left: 24%;
+}
+
+#weatherSection {
+    position: absolute;
+    bottom: 13rem;
+    right: 24%;
+}
+
+#weatherSection img {
+    display: contents;
+}
+
+#temp::after,
+#windChill::after {
+    content: " °C"
+}
+
+#wind::after {
+    content: " km/h"
+}
+
+footer #lastModified {
+    padding: 0;
+    color: var(--section-background-color);
+}
