@@ -1,0 +1,39 @@
+@media screen and (max-width: 600px) {
+
+    header,
+    main,
+    footer {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    header {
+        height: auto;
+        position: relative;
+    }
+
+    nav {
+        grid-column: 1 / -1;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: var(--nav-background-color);
+        padding: 1rem;
+        position: relative;
+        width: 100%;
+    }
+
+    nav ul.open {
+        display: flex;
+    }
+
+    #hamNavMenuButton {
+        display: block
+    }
+
+    #templeGrid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
