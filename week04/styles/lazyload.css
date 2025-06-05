@@ -1,0 +1,26 @@
+header,
+main,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    margin: 1rem auto;
+    animation: fade 15s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#lastModified {
+    color: red;
+}

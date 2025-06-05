@@ -1,0 +1,42 @@
+table {
+    width: 400px;
+    margin: 1rem auto;
+    border: thin solid lightgray;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: black;
+    color: white;
+    padding: .2rem;
+
+}
+
+th,
+td {
+    text-align: center;
+    border: 1px solid darkgray;
+}
+
+tr:first-child th,
+.highlight {
+    background-color: black;
+}
+
+th {
+    background-color: darkslategray;
+    color: white;
+    padding: 1rem;
+}
+
+tbody tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+td {
+    padding: .2rem;
+}
+
+caption {
+    caption-side: bottom;
+}
