@@ -94,6 +94,7 @@ section {
     align-self: center;
     justify-self: center;
     width: 100%;
+    min-width: 240px;
     height: 15.5rem;
     padding: 1rem;
     background-color: #e5e9ff;
