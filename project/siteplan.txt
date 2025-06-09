@@ -1,0 +1,29 @@
+Noob's Guide to PC Building
+domain: noobpcbuilder.com
+
+Slogan/Catch:
+I was the noob.
+You don't have to be!
+
+Site Purpose: 
+- Help others understand the benefits of building your own PC.
+- Familiarize users with the essential components of a PC.
+
+Scenarios:
+- How do I get started on my first build?
+- Who could I reach out to for advice?
+- How expensive is building my own PC?
+
+Color Schema:
+Background Color: #f5f7fa
+Primary Color: #3b82f6 (highlights/underline or outline headers)
+Secondary Color: #10b981 (buttons)
+Text Color: #1f2937
+Header/Footer: #111827
+
+Font: 
+Inter - used for entire webpage
+- h1 - font-weight = 700
+- h2 - font-weight = 600
+- h3 - font-weight = 500
+- p  - font-weight = 400

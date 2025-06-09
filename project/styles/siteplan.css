@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #f5f7fa;
+    --alt-background-color: #e0f2fe;
+    --primary-color: #3b82f6;
+    --secondary-color: #10b981;
+    --text-color: #1f2937;
+    --header-footer-color: #111827;
+}
+
+/* fonts */
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+h1 {
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+h3,
+a {
+    font-weight: 500;
+}
+
+/* standard elements */
+
+header,
+main,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+header,
+footer {
+    height: 6rem;
+    background-color: var(--header-footer-color);
+    color: var(--background-color);
+}
+
+header {
+    display: grid;
+    grid-template-columns: .8fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+nav {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+a {
+    width: 11.25rem;
+    margin: 0 .5rem;
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+h1,
+h2 {
+    padding: 1rem;
+    text-align: center;
+}
+
+section {
+    width: 90%;
+    padding: 1rem;
+}
+
+button {
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+    border-color: #10b981;
+    background-color: var(--secondary-color);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    padding: 0;
+    color: var(--background-color);
+    background-color: var(--header-footer-color);
+}
+
+footer p {
+    text-align: center;
+}
+
+/* classes */
+
+.catch {
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.hero {
+    background-color: var(--alt-background-color);
+}
+
+.hero,
+#build-ideas {
+    width: 100%;
+    height: fit-content;
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+/* id's */
+
+#build-ideas {}
+
+#build-ideas section {
+    text-align: center;
+}
+
+/* pseudo */
