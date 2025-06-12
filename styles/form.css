@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --background-color: #FFFFFA;
+    --alt-background-color: #F3FFB9;
+    --text-color: #080705;
+    --header-footer-color: #702632;
+    --button-color: #912F40;
+}
+
+/* fonts */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* standard elements */
+
+header,
+footer,
+main {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+header,
+footer {
+    background-color: var(--header-footer-color);
+    color: var(--background-color);
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    margin-bottom: 1rem;
+}
+
+footer {
+    margin-top: 1rem;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+}
+
+div {
+    margin-top: 1rem;
+}
+
+/* Classes */
+
+.productForm {
+    background-color: var(--alt-background-color);
+    border: 1px solid rgb(0 0 0 / 0.2);
+    border-radius: 4px;
+}
+
+.productForm div {
+    margin-top: 1rem;
+}
+
+.productForm #formContainer {
+    margin-left: 1rem;
+}
+
+.productForm label,
+.productForm #productName,
+.productForm select {
+    display: block;
+}
+
+.productForm .rating {
+    padding: 0;
+}
+
+.productForm input[type="date"] {
+    display: block;
+}
+
+.productForm input[type="date"],
+.productForm select,
+.productForm input[type="text"] {
+    padding: 6px;
+    width: 94%;
+}
+
+.productForm [type="checkbox"],
+.productForm [type="radio"] {
+    transform: scale(1.5);
+    margin: 6px;
+}
+
+.productForm textarea {
+    width: 94%;
+    max-width: 94%;
+    height: 5rem;
+    max-height: 10rem;
+}
+
+.productForm input[type="submit"] {
+    width: 90%;
+    height: 4rem;
+    padding: 1rem;
+    margin: 2rem 1rem 1rem;
+    border-radius: 6px;
+    background-color: var(--button-color);
+    color: var(--background-color);
+    font-size: 20px;
+}
+
+/* id */
