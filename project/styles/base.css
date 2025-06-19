@@ -96,6 +96,7 @@ button,
     background-color: var(--secondary-color);
     color: var(--background-color);
     font-size: medium;
+    transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
 .aButton {
@@ -262,4 +263,15 @@ nav a:hover {
 nav a:active {
     transform: scale(0.95);
     background-color: #2563eb;
+}
+
+button:hover,
+.aButton:hover {
+    filter: brightness(95%);
+}
+
+button:active,
+.aButton:active {
+    transform: scale(0.95);
+    filter: brightness(80%);
 }
