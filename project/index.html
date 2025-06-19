@@ -7,56 +7,60 @@
     <meta name="author" content="Nathan Shelley">
     <meta name="description" content="Noob's Guide to PC Building | Home Page">
     <title>A Noob's Guide to PC Building | Home Page</title>
-    <link rel="stylesheet" href="styles/siteplan.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-small.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <script defer src="scripts/siteplan.js"></script>
+    <script defer src="scripts/nav-menu.js"></script>
 </head>
 
 <body>
     <header>
-        <img src="https://picsum.photos/80/80" alt="Placeholder Image">
+        <img id="logo" src="images/floppy-disk-storage-icon.svg" alt="Logo" loading="lazy" width="80">
+        <button id="navMenuButton" aria-label="Show nav options">
+            ☰
+        </button>
         <nav>
             <a href="#">Home</a>
-            <a href="#">Part Guide</a>
-            <a href="#">Build Your Own</a>
+            <a href="parts.html">Part Guide</a>
+            <a href="build.html">Build PC</a>
         </nav>
     </header>
     <main>
         <div class="catch">
             <h1>Noob's Guide to PC Building</h1>
             <p>I was the noob.<br>You don't have to be!</p>
-            <button>Learn More</button>
+            <a class="aButton" href="parts.html">Learn More</a>
         </div>
         <div class="hero">
             <section>
                 <h3>How I got started</h3>
                 <p>I grew up gaming on a 2011 iMac, but once I saw how smooth games ran on my friends' PCs, I had to get
-                    one. After months of research, I built my first rig in 2017. I've been helping friends
-                    build theirs ever since—and finally upgraded mine in 2024.
+                    one. I researched parts for months and built my first rig in 2017. Ever since, I've been helping
+                    friends build theirs.
                 </p>
-                <button>Learning PC Parts</button>
+                <a class="aButton" href="parts.html">Learning PC Parts</a>
             </section>
-            <img src="https://picsum.photos/350/200" alt="Placeholder Image">
+            <img src="images/ryzen-build.webp" alt="Ryzen PC Build" loading="lazy" width="380">
         </div>
         <h2>Want some Ideas?</h2>
         <div id="build-ideas">
             <section>
                 <figure>
-                    <img src="https://picsum.photos/300/300" alt="Placeholder Image">
+                    <img src="images/rgb-intel-build.webp" alt="Stylish Intel PC Build" loading="lazy" width="400">
                     <figcaption>Stylish Build</figcaption>
                 </figure>
-                <button>Start Build</button>
+                <a class="aButton" href="parts.html">See Components</a>
             </section>
             <section>
                 <figure>
-                    <img src="https://picsum.photos/300/300" alt="Placeholder Image">
+                    <img src="images/sleek-amd-build.webp" alt="Sleek AMD PC Build" loading="lazy" width="371">
                     <figcaption>Sleek Build</figcaption>
                 </figure>
-                <button>Start Build</button>
+                <a class="aButton" href="parts.html">See Components</a>
             </section>
         </div>
 

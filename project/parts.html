@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nathan Shelley">
+    <meta name="description" content="Noob's Guide to PC Building | Home Page">
+    <title>A Noob's Guide to PC Building | Home Page</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-small.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script defer src="scripts/nav-menu.js"></script>
+    <script defer src="scripts/pc-build.js"></script>
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="images/floppy-disk-storage-icon.svg" alt="Logo" loading="lazy" width="80">
+        <button id="navMenuButton" aria-label="Show nav options">
+            ☰
+        </button>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Part Guide</a>
+            <a href="build.html">Build PC</a>
+        </nav>
+    </header>
+    <main>
+        <div class="catch">
+            <h1>PC Components</h1>
+            <p id="catch-para">Picking the right parts can seem daunting, but it doesn't have to be!</p>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Component</th>
+                    <th>Description</th>
+                    <th class="img-column">Image</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CPU<br>(Central Processing Unit)</td>
+                    <td>The brain of the computer. Performs most of the processing and runs instructions.</td>
+                    <td class="img-column">
+                        <img src="images/cpu-icon.svg" alt="CPU" loading="lazy" width="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td>GPU<br>(Graphics Processing Unit)</td>
+                    <td>Handles graphics, video, and 3D images. Necessity for gaming, video editing, and AI projects.
+                    </td>
+                    <td class="img-column">
+                        <img src="images/gpu-icon.svg" alt="GPU" loading="lazy" width="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td>RAM<br>(Random Access Memory)</td>
+                    <td>Short-term memory that stores data for active applications.</td>
+                    <td class="img-column">
+                        <img src="images/ram-icon.svg" alt="RAM" loading="lazy" width="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td>PSU<br>(Power Supply Unit)</td>
+                    <td>Converts electricity from the wall into usable power for internal components.</td>
+                    <td class="img-column">
+                        <img src="images/psu-icon.svg" alt="Power Supply Unit" loading="lazy" width="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Motherboard</td>
+                    <td>The main circuit board that connects all the parts. Houses CPU, RAM, GPU, and storage.</td>
+                    <td class="img-column">
+                        <img src="images/motherboard-icon.svg" alt="Motherboard" loading="lazy" width="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Storage<br>(HDD/SSD)</td>
+                    <td>Holds files, software, and operating system.</td>
+                    <td class="img-column">
+                        <img src="images/hdd-storage-icon.svg" alt="Storage" loading="lazy" width="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Cooling System<br>(Fans/Heatsinks)</td>
+                    <td>Keeps temperatures within safe limits by cooling down components.</td>
+                    <td class="img-column">
+                        <img src="images/cooling-system-icon.svg" alt="Cooling System" loading="lazy" width="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Case</td>
+                    <td>Contains and protects all components. Comes in various sizes!</td>
+                    <td class="img-column">
+                        <img src="images/pc-case-icon.svg" alt="PC Case" loading="lazy" width="50">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <section id="pc-example">
+            <button class="buildButton" id="ryzenBuild">See Ryzen Build</button>
+            <button class="buildButton" id="intelBuild">See Intel Build</button>
+            <div id="pc-build-displayer"></div>
+        </section>
+        <section id="startBuild">
+            <h2>Ready to Build?</h2>
+            <a class="aButton" href="build.html">Start Build</a>
+        </section>
+    </main>
+    <footer>
+        <p>Noob's Guide to PC Building ©️<br>Nathan Shelley | WDD131 </p>
+    </footer>
+</body>
+
+</html>

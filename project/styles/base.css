@@ -65,7 +65,7 @@ nav {
     align-content: center;
 }
 
-a {
+nav a {
     width: 11.25rem;
     margin: 0 .5rem;
     padding: 1rem;
@@ -73,6 +73,7 @@ a {
     text-align: center;
     background-color: var(--primary-color);
     color: var(--background-color);
+    transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
 h1,
@@ -86,12 +87,23 @@ section {
     padding: 1rem;
 }
 
-button {
+button,
+.aButton {
     padding: 1rem;
     margin: 1rem;
     border-radius: 5px;
     border-color: #10b981;
     background-color: var(--secondary-color);
+    color: var(--background-color);
+    font-size: medium;
+}
+
+.aButton {
+    width: fit-content;
+    margin: 2rem auto;
+    display: block;
+    position: relative;
+    text-decoration: none;
 }
 
 footer {
@@ -107,6 +119,35 @@ footer a {
 }
 
 footer p {
+    text-align: center;
+}
+
+/* table elements */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem auto 0;
+    font-family: sans-serif;
+}
+
+th:first-child {
+    width: 14rem;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: left;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+.img-placeholder {
     text-align: center;
 }
 
@@ -129,15 +170,96 @@ footer p {
     height: fit-content;
     margin: 1rem 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     align-items: center;
     justify-items: center;
 }
 
+.hero img {
+    margin: 1rem;
+}
+
+/* form */
+
+.pc-form {
+    width: 400px;
+    margin: 0 auto 2rem;
+    background-color: var(--alt-background-color);
+    border: 1px solid rgb(0 0 0/0.1);
+    border-radius: 4px;
+}
+
+.pc-form label {
+    display: block;
+    margin: 2rem 1rem 0;
+}
+
+.pc-form .radio,
+.pc-form input[type="number"] {
+    display: block;
+    margin: .5rem 1.1rem;
+    padding: .2rem;
+}
+
+.pc-form [type="number"] {
+    width: 100px;
+}
+
+.pc-form [type=radio] {
+    transform: scale(1.5);
+    margin: 6px;
+}
+
+.pc-form select {
+    transform: scale(1.2);
+    margin-left: 1rem;
+}
+
+#firstLabel {
+    margin-top: 1rem;
+}
+
+#submit {
+    width: 92%;
+}
+
 /* id's */
 
-#build-ideas section {
+#logo {
+    filter: invert(100%) sepia(27%) saturate(1024%) hue-rotate(178deg) brightness(101%) contrast(96%);
+}
+
+#navMenuButton {
+    display: none;
+    color: var(--background-color);
+}
+
+#catch-para {
+    content: "Picking the right parts can seem daunting, but it doesn't have to be!";
+}
+
+#build-ideas section,
+#pc-example {
+    width: 100%;
+    text-align: center;
+}
+
+#pc-example p {
+    text-align: left;
+    margin-left: 30%;
+}
+
+#startBuild {
+    width: 100%;
     text-align: center;
 }
 
 /* pseudo */
+nav a:hover {
+    background-color: #1060ee;
+}
+
+nav a:active {
+    transform: scale(0.95);
+    background-color: #2563eb;
+}

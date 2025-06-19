@@ -1,0 +1,74 @@
+@media screen and (max-width: 750px) {
+    nav a {
+        width: 8rem;
+    }
+
+    .hero img {
+        margin-bottom: 2rem;
+    }
+
+    #pc-example p {
+        margin-left: 25%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    header,
+    main,
+    footer {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    header {
+        height: auto;
+        position: relative;
+    }
+
+    /* nav menu */
+
+    nav {
+        display: none;
+        width: 100%;
+        margin: 0;
+        grid-column: 1 / -1;
+    }
+
+    nav.open {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        width: 100%;
+        margin: 0;
+    }
+
+    #navMenuButton {
+        display: block
+    }
+
+    /* parts table */
+
+    .img-column {
+        display: none;
+    }
+
+    #catch-para {
+        display: block;
+        color: transparent;
+    }
+
+    #catch-para::after {
+        content: "Picking the right parts can seem daunting,\A but it doesn't have to be!";
+        white-space: pre-line;
+        padding-left: 2rem;
+        text-align: center;
+        color: #1f2937;
+    }
+
+    #pc-example p {
+        margin-left: 20%;
+    }
+}

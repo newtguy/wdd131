@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nathan Shelley">
+    <meta name="description" content="Noob's Guide to PC Building | Home Page">
+    <title>A Noob's Guide to PC Building | Home Page</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-small.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script defer src="scripts/nav-menu.js"></script>
+    <script defer src="scripts/form-submission.js"></script>
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="images/floppy-disk-storage-icon.svg" alt="Logo" loading="lazy" width="80">
+        <button id="navMenuButton" aria-label="Show nav options">
+            ☰
+        </button>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="parts.html">Part Guide</a>
+            <a href="#">Build PC</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Make Your Dream Build</h2>
+        <form class="pc-form" method="get" action="thanks.html">
+            <div id="formContainer">
+                <label id="firstLabel">CPU Price($100-1000): </label>
+                <input type="number" id="cpuPrice" min="100" max="1000" required>
+                <label>GPU Price($200-2000): </label>
+                <input type="number" id="gpuPrice" min="200" max="2000" required>
+
+                <label>RAM Size:<br>
+                    <select id="ramSize" name="ramSize" required>
+                        <option value="" disabled selected>Choose RAM Size ...</option>
+                        <option id="fourGB" value="4">4 GB</option>
+                        <option id="eightGB" value="4">8 GB</option>
+                        <option id="sixteenGB" value="4">16 GB</option>
+                        <option id="thirty-twoGB" value="4">32 GB</option>
+                        <option id="sixty-fourGB" value="4">64 GB</option>
+                    </select>
+                </label>
+
+                <label>Cooling System</label>
+                <label class="radio"><input id="airCooler" type="radio" name="coolingType">Air Cooling</label>
+                <label class="radio"><input id="liquidCooler" type="radio" name="coolingType">Liquid Cooling</label>
+
+                <label>Case Size</label>
+                <label class="radio"><input id="sff" type="radio" name="caseSize">Small Form Factor</label>
+                <label class="radio"><input id="mini" type="radio" name="caseSize">Mini Tower</label>
+                <label class="radio"><input id="mid" type="radio" name="caseSize">Mid Tower</label>
+                <label class="radio"><input id="full" type="radio" name="caseSize">Full Tower</label>
+                <label class="radio"><input id="super" type="radio" name="caseSize">Super Tower</label>
+
+                <button id="submit" type="submit">Save My Build</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>Noob's Guide to PC Building ©️<br>Nathan Shelley | WDD131 </p>
+    </footer>
+</body>
+
+</html>
