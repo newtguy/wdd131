@@ -284,3 +284,7 @@ button:active,
     transform: scale(0.95);
     filter: brightness(80%);
 }
+
+tr:nth-child(even) {
+    background-color: var(--alt-background-color);
+}
